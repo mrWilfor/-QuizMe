@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.yourcompany.android.quizme"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:6:5-26:19
+12        android:allowBackup="false"
+12-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:7:9-36
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] /Users/ivantarasov/.gradle/caches/transforms-3/2a47483d8eeecece1235cdc64fe3facf/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:8:9-43
+16        android:label="@string/app_name"
+16-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:9:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:10:9-54
+18        android:supportsRtl="true"
+18-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:11:9-35
+19        android:testOnly="true"
+20        android:theme="@style/SplashTheme" >
+20-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:12:9-43
+21
+22        <!-- Main Activity -->
+23        <activity
+23-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:16:9-24:20
+24            android:name="com.yourcompany.android.quizme.MainActivity"
+24-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:17:13-41
+25            android:exported="true"
+25-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:18:13-36
+26            android:theme="@style/SplashTheme" >
+26-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:19:13-47
+27            <intent-filter>
+27-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:20:13-23:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:21:17-69
+28-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:21:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:22:17-77
+30-->/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/AndroidManifest.xml:22:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->[androidx.compose.ui:ui-tooling:1.1.1] /Users/ivantarasov/.gradle/caches/transforms-3/094a27b29b39a89dd17b85808c3c0f63/transformed/jetified-ui-tooling-1.1.1/AndroidManifest.xml:25:9-27:39
+34            android:name="androidx.compose.ui.tooling.PreviewActivity"
+34-->[androidx.compose.ui:ui-tooling:1.1.1] /Users/ivantarasov/.gradle/caches/transforms-3/094a27b29b39a89dd17b85808c3c0f63/transformed/jetified-ui-tooling-1.1.1/AndroidManifest.xml:26:13-71
+35            android:exported="true" />
+35-->[androidx.compose.ui:ui-tooling:1.1.1] /Users/ivantarasov/.gradle/caches/transforms-3/094a27b29b39a89dd17b85808c3c0f63/transformed/jetified-ui-tooling-1.1.1/AndroidManifest.xml:27:13-36
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
+39            android:authorities="com.yourcompany.android.quizme.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.0.0] /Users/ivantarasov/.gradle/caches/transforms-3/fafa9e3623ac41b3ebf35f052764c43a/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+44            <meta-data
+44-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:31:13-33:52
+45                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+45-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:32:17-85
+46                android:value="androidx.startup" />
+46-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:33:17-49
+47            <meta-data
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ivantarasov/.gradle/caches/transforms-3/f1f521abc91f67fcfa6a288ca981d2f1/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+48                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+48-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ivantarasov/.gradle/caches/transforms-3/f1f521abc91f67fcfa6a288ca981d2f1/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+49                android:value="androidx.startup" />
+49-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ivantarasov/.gradle/caches/transforms-3/f1f521abc91f67fcfa6a288ca981d2f1/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+50        </provider>
+51
+52        <receiver
+52-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:36:9-45:20
+53            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+53-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:37:13-76
+54            android:directBootAware="false"
+54-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:38:13-44
+55            android:enabled="true"
+55-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:39:13-35
+56            android:exported="true"
+56-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:40:13-36
+57            android:permission="android.permission.DUMP" >
+57-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:41:13-57
+58            <intent-filter>
+58-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:42:13-44:29
+59                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+59-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:43:17-91
+59-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/ivantarasov/.gradle/caches/transforms-3/681baa9003bf35380129f33135cc8ba1/transformed/jetified-profileinstaller-1.1.0/AndroidManifest.xml:43:25-88
+60            </intent-filter>
+61        </receiver>
+62    </application>
+63
+64</manifest>

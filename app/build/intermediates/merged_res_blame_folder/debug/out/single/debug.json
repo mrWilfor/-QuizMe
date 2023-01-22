@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/drawable-mdpi_droid_reading.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/drawable-mdpi/droid_reading.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/drawable-mdpi_splash_icon.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/drawable-mdpi/splash_icon.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/drawable-mdpi_droid_celebrating.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/drawable-mdpi/droid_celebrating.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/ivantarasov/StudioProjects/lifecycle_of_composables/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    }
+]

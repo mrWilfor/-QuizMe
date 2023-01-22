@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">QuizMe</string>
+  <string name="welcome">Welcome to QuizMe!</string>
+  <string name="quiz_subtitle">Ready for a challenge?</string>
+  <string name="having_fun">I\'m having fun with Jetpack Compose!</string>
+  <string name="try_me">Try me!</string>
+  <string name="error_title">Try again!</string>
+  <string name="yay">Yay!</string>
+  <string name="start_again">Start again</string>
+  <string name="you_won">Congrats, you are truly an Android developer! Keep it up on your Jetpack Compose journey!</string>
+</resources>
