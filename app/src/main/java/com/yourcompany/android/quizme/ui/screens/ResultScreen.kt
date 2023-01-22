@@ -63,6 +63,9 @@ fun ResultScreen(contentPadding: PaddingValues, quizViewModel: QuizViewModel) {
       contentDescription = "droid celebrating"
     )
     Congrats(title = R.string.yay, subtitle = R.string.you_won)
+    SubmitButton (true, stringResource(id = R.string.start_again)) {
+      quizViewModel.startAgain()
+    }
   }
 }
 

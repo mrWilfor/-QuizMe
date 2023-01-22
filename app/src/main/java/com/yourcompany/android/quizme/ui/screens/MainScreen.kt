@@ -36,16 +36,52 @@ package com.yourcompany.android.quizme.ui.screens
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.yourcompany.android.quizme.business.Event
 import com.yourcompany.android.quizme.business.QuizViewModel
+import com.yourcompany.android.quizme.business.ScreenState
 import com.yourcompany.android.quizme.ui.theme.QuizMeTheme
+import com.yourcompany.android.quizme.ui.widgets.ErrorDialog
+import com.yourcompany.android.quizme.ui.widgets.LoadingIndicator
 
 const val MAIN = "MainLog"
 
 @Composable
 fun MainScreen(contentPadding: PaddingValues, quizViewModel: QuizViewModel) {
-  QuizScreen(contentPadding = contentPadding, quizViewModel = quizViewModel)
+  // 1
+  val state by quizViewModel.state.observeAsState()
+  val event by quizViewModel.event.collectAsState(null)
+
+  // 2
+  when (state) {
+    is ScreenState.Quiz -> {
+      QuizScreen(
+        contentPadding = contentPadding,
+        quizViewModel = quizViewModel
+      )
+      // 3
+      when (val e = event) {
+        is Event.Error -> {
+          ErrorDialog(message = e.message)
+        }
+        is Event.Loading -> {
+          LoadingIndicator()
+        }
+        else -> {}
+      }
+    }
+    is ScreenState.Success -> {
+      ResultScreen(
+        contentPadding = contentPadding,
+        quizViewModel = quizViewModel
+      )
+    }
+    else -> {}
+  }
 }
 
 @Preview(showBackground = true)

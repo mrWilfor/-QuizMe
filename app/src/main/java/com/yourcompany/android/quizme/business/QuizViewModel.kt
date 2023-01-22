@@ -55,12 +55,28 @@ class QuizViewModel : ViewModel() {
   private val _event = MutableSharedFlow<Event?>()
   val event: SharedFlow<Event?> = _event
 
+  private val _questions = MutableLiveData<List<String>>()
+  val questions: LiveData<List<String>> = _questions
+
+  init {
+    fetchQuestions()
+  }
+
   fun onAppear() {
     Log.d(MAIN, "QuizScreen appears")
   }
 
   fun onDisappear() {
     Log.d(MAIN, "QuizScreen disappears")
+    fetchQuestions()
+  }
+
+  private fun fetchQuestions() {
+    _questions.value =  repository.getQuestions()
+  }
+
+  fun fetchExtendedQuestions() {
+    _questions.value = repository.getExtendedQuestions()
   }
 
   fun verifyAnswers(answers: MutableMap<String, String>) {
@@ -82,7 +98,6 @@ class QuizViewModel : ViewModel() {
       _event.emit(null)
     }
   }
-
 }
 
 sealed class ScreenState {

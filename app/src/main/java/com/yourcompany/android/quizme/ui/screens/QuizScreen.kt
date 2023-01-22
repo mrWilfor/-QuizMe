@@ -39,8 +39,10 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -59,15 +61,9 @@ fun QuizScreen(contentPadding: PaddingValues, quizViewModel: QuizViewModel) {
     var checked by remember { mutableStateOf(false) }
     val onCheckedChange: (Boolean) -> Unit = { value -> checked = value }
 
-    var questions by remember {
-      mutableStateOf(
-        listOf(
-          "What's the best programming language?",
-          "What's the best OS?"
-        )
-      )
-    }
-    val onAnswerChanged: (String, String) -> Unit = { question, answer -> }
+    val questions by quizViewModel.questions.observeAsState()
+    val answers = remember { mutableMapOf<String, String>() }
+    val onAnswerChanged: (String, String) -> Unit = { question, answer -> answers[question] = answer }
 
     ScreenIntroTexts()
 
@@ -80,8 +76,17 @@ fun QuizScreen(contentPadding: PaddingValues, quizViewModel: QuizViewModel) {
 
     Column(horizontalAlignment = Alignment.CenterHorizontally) {
       ImageDecoration(modifier = Modifier.weight(1f))
-      SubmitButton(stringResource(id = R.string.try_me)) { }
+      if (checked) {
+        quizViewModel.fetchExtendedQuestions()
+        SubmitButton(checked, stringResource(id = R.string.try_me)) {
+          quizViewModel.verifyAnswers(answers)
+        }
+      }
     }
+  }
+  DisposableEffect(quizViewModel) {
+    quizViewModel.onAppear()
+    onDispose { quizViewModel.onDisappear() }
   }
 }
 
@@ -101,21 +106,29 @@ fun ScreenIntroTexts() {
 }
 
 @Composable
-fun QuizInputFields(questions: List<String>, onAnswerChanged: (String, String) -> Unit) {
+fun QuizInputFields(questions: List<String>?, onAnswerChanged: (String, String) -> Unit) {
   Column {
-    questions.forEach { question ->
-      QuizInput(question = question)
+    questions?.forEach { question ->
+      key(question){
+        QuizInput(question = question, onAnswerChanged = onAnswerChanged)
+      }
     }
   }
 }
 
 @Composable
-fun QuizInput(question: String) {
+fun QuizInput(question: String, onAnswerChanged: (String, String) -> Unit) {
   Log.d(MAIN, "QuizInput $question")
-  val input = ""
+  var input by remember { mutableStateOf("") }
+
   TextField(
     value = input,
-    onValueChange = { },
+    onValueChange = { value ->
+      run {
+        input = value
+        onAnswerChanged(question, input)
+      }
+    },
     modifier = Modifier
       .fillMaxWidth()
       .padding(top = 16.dp),
@@ -146,7 +159,7 @@ fun CheckBox(
 }
 
 @Composable
-fun SubmitButton(text: String, onClick: () -> Unit) {
+fun SubmitButton(isChecked: Boolean, text: String, onClick: () -> Unit) {
   Log.d(MAIN, "Button recomposed")
   ExtendedFloatingActionButton(
     text = {
@@ -154,6 +167,7 @@ fun SubmitButton(text: String, onClick: () -> Unit) {
     },
     shape = RectangleShape,
     onClick = onClick,
+    backgroundColor = if (isChecked) MaterialTheme.colors.secondary else Color.Gray,
     modifier = Modifier
       .fillMaxWidth()
   )
